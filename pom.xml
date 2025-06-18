@@ -56,6 +56,10 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<version>3.3.4</version>
+				<configuration>
+					<mainClass>com.example.todo_api.TodoApiApplication</mainClass>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
