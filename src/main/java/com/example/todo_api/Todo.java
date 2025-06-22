@@ -1,8 +1,10 @@
+//declares where this file lives
 package com.example.todo_api;
 
+//imports the entity annotation from the jakarta persistence library
 import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
 import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
 
 @Entity
 public class Todo {
