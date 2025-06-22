@@ -1,15 +1,18 @@
 //declares where this file lives
 package com.example.todo_api;
 
-//imports the entity annotation from the jakarta persistence library
+//imports the entity annotation from the jakarta persistence library, making the class an entity that can be persisted to the database
 import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
+import jakarta.persistence.GeneratedValue; // Auto-generates unique IDs for each todo
+import jakarta.persistence.Id; 
 
+
+//makes an entity
 @Entity
 public class Todo {
 	@Id
 	@GeneratedValue
+	//identifies the fields that are part of the entity
 	private Long id;
 	private String title;
 	private String description;
